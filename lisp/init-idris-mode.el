@@ -1,0 +1,3 @@
+
+
+(provide 'init-idris-mode)
