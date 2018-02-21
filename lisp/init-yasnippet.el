@@ -1,3 +1,4 @@
+(require-package 'yasnippet-snippets)
 (setq my-yasnippets (expand-file-name "~/my-yasnippets"))
 
 (if (and  (file-exists-p my-yasnippets) (not (member my-yasnippets yas-snippet-dirs)))
