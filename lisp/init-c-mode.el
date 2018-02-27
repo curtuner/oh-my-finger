@@ -29,8 +29,6 @@
   )
 
 
-
-
 (add-hook 'c-mode-hook 'my-c-mode-hook)
 (add-hook 'c-mode-hook 'my-rtags-hook)
 (add-hook 'c++-mode-hook 'my-rtags-hook)
@@ -43,5 +41,11 @@
                         '(("constexpr" . 'font-lock-keyword-face)))
 
 
+;; use irony for completion
+(add-hook 'c++-mode-hook 'irony-mode)
+(add-hook 'c-mode-hook 'irony-mode)
+(eval-after-load 'company
+  '(add-to-list
+    'company-backends '(company-irony-c-headers company-irony)))
 
 (provide 'init-c-mode)
