@@ -18,6 +18,7 @@
 	  (lambda () (setq gc-cons-threshold sanityinc/initial-gc-cons-threshold)))
 
 
+
 ;; 备份文件
 (setq backup-directory-alist (quote (("." . "~/.emacs_backup"))))
 
@@ -113,6 +114,11 @@ same directory as the org-buffer and insert a link to this file."
   )
 
 (load-library "url-handlers")
+
+;; desktop save
+(desktop-save-mode 1)
+(setq desktop-dirname "~/.emacs.d/workstations/")
+
 ;; 测试
 (defun initel ()
   (interactive)
@@ -185,7 +191,7 @@ same directory as the org-buffer and insert a link to this file."
      ("" "listings" nil))))
  '(package-selected-packages
    (quote
-    (js2-refactor company-tern skewer-mode indium dockerfile-mode tornado-template-mode company-glsl glsl-mode company-irony company-irony-c-headers flycheck-irony blank-mode helm-ack helm-ad helm-google helm helm-company simple-httpd js2-mode ein helm-tramp function-args cmake-ide dired+ multiple-cursors flycheck-plantuml plantuml-mode mu4e-alert mu4e-maildirs-extension flycheck-rtags helm-projectile iedit company-anaconda company-jedi graphviz-dot-mode ob-ipython ctable epic org-ref company-coq helm-swoop helm-ag wanderlust nhexl-mode ace-jump-mode bing-dict helm-ls-svn helm-git-files helm-git-grep python-mode blog-admin cmake-mode helm-smex ecb scheme-complete c-eldoc nasm-mode magit flycheck fcitx window-numbering smex paredit matlab-mode markdown-mode lua-mode llvm-mode helm-gtags flycheck-rust flycheck-ocaml evil disable-mouse company-racer company-math company-c-headers company-auctex color-theme-solarized color-theme-sanityinc-tomorrow color-theme-sanityinc-solarized cargo bison-mode autodisass-llvm-bitcode))))
+    (yasnippet-snippets js2-refactor company-tern skewer-mode indium dockerfile-mode tornado-template-mode company-glsl glsl-mode company-irony company-irony-c-headers flycheck-irony blank-mode helm-ack helm-ad helm-google helm helm-company simple-httpd js2-mode ein helm-tramp function-args cmake-ide dired+ multiple-cursors flycheck-plantuml plantuml-mode mu4e-alert mu4e-maildirs-extension flycheck-rtags helm-projectile iedit company-anaconda company-jedi graphviz-dot-mode ob-ipython ctable epic org-ref company-coq helm-swoop helm-ag wanderlust nhexl-mode ace-jump-mode bing-dict helm-ls-svn helm-git-files helm-git-grep python-mode blog-admin cmake-mode helm-smex ecb scheme-complete c-eldoc nasm-mode magit flycheck fcitx window-numbering smex paredit matlab-mode markdown-mode lua-mode llvm-mode helm-gtags flycheck-rust flycheck-ocaml evil disable-mouse company-racer company-math company-c-headers company-auctex color-theme-solarized color-theme-sanityinc-tomorrow color-theme-sanityinc-solarized cargo bison-mode autodisass-llvm-bitcode))))
 (custom-set-faces
  ;; custom-set-faces was added by Custom.
  ;; If you edit it by hand, you could mess it up, so be careful.
