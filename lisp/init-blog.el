@@ -1,7 +1,7 @@
 ;; blog
 (require 'blog-admin)
 
-(setq blog-admin-backend-path "~/hexo")
+(setq blog-admin-backend-path "~/blogtune")
 (setq blog-admin-backend-type 'hexo)
 (setq blog-admin-backend-new-post-in-drafts t) ;; create new post in drafts by default
 (setq blog-admin-backend-new-post-with-same-name-dir t) ;; create same-name directory with new post
