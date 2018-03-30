@@ -19,6 +19,7 @@
   "add rtags support"
   (setq flycheck-clang-language-standard "gnu11")
   (c-set-style "stroustrup")
+  (local-set-key (kbd "C-c a") 'beginning-of-defun)
   )
 
 (defun my-rtags-hook ()

@@ -82,5 +82,6 @@ But you may use safer HTTPS instead.")
 (require-package 'cmake-ide)
 (require-package 'dockerfile-mode)
 (require-package 'simple-httpd)
+(require-package 'plantuml-mode)
 
 (provide 'init-elpa)
