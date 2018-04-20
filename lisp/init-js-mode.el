@@ -3,4 +3,6 @@
 (add-hook 'css-mode-hook 'skewer-css-mode)
 (add-hook 'html-mode-hook 'skewer-html-mode)
 
+()
+
 (provide 'init-js-mode)

@@ -25,6 +25,7 @@
 (add-hook 'web-mode-hook 'skewer-html-mode)
 
 (setq httpd-root "/home/curt/test/teweb")
+(setq httpd-port 8787)
 
 
 (sp-local-pair 'web-mode "<" nil :when '(sp-web-mode-is-code-context))
